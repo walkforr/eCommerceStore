@@ -16,7 +16,10 @@ var MongoStore = require('connect-mongo')(session);
 var indexRouter = require('./routes/index');
 var userRoutes = require('./routes/user');
 
+app.set
+
 var app = express();
+app.set('PORT', (process.env.PORT || 3000));
 
 mongoose.connect('mongodb://localhost:27017/shopping', {useNewUrlParser: true })
 require('./config/passport');
